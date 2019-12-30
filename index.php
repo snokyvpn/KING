@@ -17,7 +17,7 @@
 				<ul class="actions">
 					<li>
 						<li><a href="/gerar.php" class="button special">Gerar login gratis</a></li>
-						<li><a href="#two" class="button special">Comprar login</a></li>
+						<li><a target="_blank" href="https://t.me/grupokingbr" class="button special">Comprar login</a></li>
 					</li>
 				</ul>
 			</section>
@@ -36,7 +36,6 @@
 								<i class="fas fa-cloud"></i></span></span>
 								<h3>Servidores disponiveis:</h3>
 								<p>Azure</p>
-								</br>
 							</section>
 						</div>
 						<div class="4u 12u$(medium)">
@@ -46,7 +45,6 @@
 								<i class="fas fa-desktop"></i></span></span>
 								<h3>Suporte</h3>
 								<p>Suporte 24hrs para clientes.</p>
-								</br>
 							</section>
 						</div>
 						<div class="4u$ 12u$(medium)">
@@ -62,58 +60,34 @@
 				</div>
 			</section>
 			<section id="three" class="wrapper style3 special">
+				<style>
+				img{
+					width: 20px;
+					height: 20px;
+				}
+				.statussv{
+					font-size: 20px;
+				}
+				.container b{
+					font-size: 25px;
+				}
+				</style>
 				<div class="container">
-				</br></br></br>
-				<?php
-				require_once($_SERVER['DOCUMENT_ROOT']."/assets/php/classe.ssh.php");
-				require_once($_SERVER['DOCUMENT_ROOT']."/assets/php/ip.php");
-				require_once($_SERVER['DOCUMENT_ROOT']."/assets/php/pass.php");
-				$ip_servidorSSH = $ip1;
-				$loginSSH = "root";
-				$senhaSSH = $pass;
-				$ssh = new SSH2($ip_servidorSSH);
-				$ssh->auth($loginSSH,$senhaSSH);
-				$ssh->exec("./sshmonitorbot.sh 1");
-				$sv1u = (string) $ssh->output();
-
-				$ip_servidorSSH = $ip2;
-				$loginSSH = "root";
-				$senhaSSH = $pass;
-				$ssh = new SSH2($ip_servidorSSH);
-				$ssh->auth($loginSSH,$senhaSSH);
-				$ssh->exec("./sshmonitorbot.sh 1");
-				$sv2u = (string) $ssh->output();
-
-				$sv1o = "0";
-				$ch = curl_init();
-				curl_setopt($ch, CURLOPT_TIMEOUT, 5); //timeout in seconds
-				curl_setopt($ch, CURLOPT_URL, $ip1);
-				curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-				curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'HEAD');
-				curl_setopt($ch, CURLOPT_NOBODY, true);
-				$result = curl_exec($ch); if (curl_errno($ch)){$sv1o = 'Offline';}else{$sv1o = 'Online';}
-				curl_close($ch);
-
-				$sv2o = "0";
-				$ch = curl_init();
-				curl_setopt($ch, CURLOPT_TIMEOUT, 5); //timeout in seconds
-				curl_setopt($ch, CURLOPT_URL, $ip2);
-				curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-				curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'HEAD');
-				curl_setopt($ch, CURLOPT_NOBODY, true);
-				$result = curl_exec($ch); if (curl_errno($ch)){$sv2o = 'Offline';}else{$sv2o = 'Online';}
-				curl_close($ch);
-				?>
 					<header class="major">
 					<h2></h2>
-					<b>Servidor: <img title="Brasil" src="/img/ban-bras.png"></img></b>
-				  <p>Status: <?php echo $sv1o; ?></p>
-				  <p>Usuarios online: <?php echo $sv1u; ?></p>
-				  </br></br>
+					<b>Servidor: <img title="Brasil" src="/images/ban/ban-bras.png"></img></b></br>
+					<div class="statussv">
+					Status: </br>
+				  Usuarios online:
+					</div>
+				  </br></br></br></br>
 
-				  <b>Servidor: <img title="França" src="/img/ban-fran.png"></img></b>
-				  <p>Status: <?php echo $sv2o; ?></p>
-				  <p>Usuarios online: <?php echo $sv2u; ?></p>				</br></br>
+				  <b>Servidor: <img title="França" src="/images/ban/ban-fran.png"></img></b></br>
+					<div class="statussv">
+					Status: </br>
+				  Usuarios online:
+					</br></br></br></br>
+					</div>
 					  	<section id="back">
 					    	<ul class="actions">
 					       	<li>

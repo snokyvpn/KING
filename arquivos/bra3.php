@@ -11,7 +11,7 @@
 
     <?php
     $arquivovivo = "/arquivos/VivoBRA3.ehi";
-    if (file_exists("/var/www$arquivovivo")) {
+    if (file_exists("/var/www1$arquivovivo")) {
     echo '<td class="cell100 column4"> <a href="'.$arquivovivo.'"><b style="color: #1a7d8a;">Download</b></a> </td>';
     } else {
     echo '<td class="cell100 column4"> <a>S/ arquivo</a> </td>'; }
@@ -24,7 +24,7 @@
 
     <?php
     $arquivovivo1 = "/arquivos/VivoBRA31.ehi";
-    if (file_exists("/var/www$arquivovivo1")) {
+    if (file_exists("/var/www1$arquivovivo1")) {
     echo '<td class="cell100 column4"> <a href="'.$arquivovivo1.'"><b style="color: #1a7d8a;">Download</b></a> </td>';
     } else {
     echo '<td class="cell100 column4"> <a>S/ arquivo</a> </td>'; }
@@ -37,7 +37,7 @@
 
         <?php
         $arquivoclaro = "/arquivos/ClaroBRA3.ehi";
-        if (file_exists("/var/www$arquivoclaro")) {
+        if (file_exists("/var/www1$arquivoclaro")) {
         echo '<td class="cell100 column4"> <a href="'.$arquivoclaro.'"><b style="color: #1a7d8a;">Download</b></a> </td>';
         } else {
         echo '<td class="cell100 column4"> <a>S/ arquivo</a> </td>'; }
@@ -50,7 +50,7 @@
 
         <?php
         $arquivotim = "/arquivos/TimBRA3.ehi";
-        if (file_exists("/var/www$arquivotim")) {
+        if (file_exists("/var/www1$arquivotim")) {
         echo '<td class="cell100 column4"> <a href="'.$arquivotim.'"><b style="color: #1a7d8a;">Download</b></a> </td>';
         } else {
         echo '<td class="cell100 column4"> <a>S/ arquivo</a> </td>'; }
@@ -63,7 +63,7 @@
 
         <?php
         $arquivooi = "/arquivos/OiBRA3.ehi";
-        if (file_exists("/var/www$arquivooi")) {
+        if (file_exists("/var/www1$arquivooi")) {
         echo '<td class="cell100 column4"> <a href="'.$arquivooi.'"><b style="color: #1a7d8a;">Download</b></a> </td>';
         } else {
         echo '<td class="cell100 column4"> <a>S/ arquivo</a> </td>'; }

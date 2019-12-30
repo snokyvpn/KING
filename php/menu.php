@@ -32,7 +32,7 @@
                             </div>
                         </li>
                         <li>
-                            <a href="/index.php#two">
+                            <a target="_blank" href="https://t.me/grupokingbr">
                                 <i class="fas fa-shopping-cart"></i>
                                 <span class="menu-text">Comprar login premium</span>
                             </a>

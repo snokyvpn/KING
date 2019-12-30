@@ -6,17 +6,14 @@
 		<meta charset="UTF-8">
 		<meta name="author" content="HackkcaH">
 		<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-		<?php
-		require_once($_SERVER['DOCUMENT_ROOT']."/php/allcssjs.php");
-		include($_SERVER['DOCUMENT_ROOT']."/php/pass.php");
-		?>
+		<?php require_once($_SERVER['DOCUMENT_ROOT']."/php/allcssjs.php");?>
 	</head>
-	<body class="landing1">
+	<body class="landing1" onload="desativado1()">
 		<?php require_once($_SERVER['DOCUMENT_ROOT']."/php/menu.php"); ?>
 			<section id="main" class="wrapper">
 				<div class="container">
 					<header class="major">
-					</br>
+						</br>
   							<body class="fix-header fix-sidebar card-no-border">
 										<div id="main-wrapper">
 						            <div class=" " style="min-height: 0px;">
@@ -53,8 +50,7 @@
 																												<div class="col-md-4">
 																													<label style="color: white;" class="control-label">Selecione o servidor*</label>
 																													<select class="form-control custom-select" style="width: 100%;" name="sv" id="sv">
-																														<option value="1" selected="selected">Servidor BRA <?php echo "(Usuarios online: $sv1)"; ?></option>
-																														<option value="3">Servidor BRA 2<?php echo "(Usuarios online: $sv3)"; ?></option>
+																														<option value="1" selected="selected">Servidor BRA</option>
 																													</select>
 																											</div>
 																									</center>
@@ -64,30 +60,8 @@
 																									<script>
 																									function pass() {document.getElementById("form").submit();}
 																									</script>
-																									<?php
-																									$loginssh = $_COOKIE['usuariogerado'];
-																									if ($loginssh != ""){
-																							 echo '<div id="teste">
-																									  <input type="checkbox" class="custom-control-input" name="jagerado" id="customControlInline">
-																									  <label style="color: white;" class="custom-control-label" value="1" for="customControlInline">Eu entendo que ao criar uma conta nova minha antiga sera apagada.</label>
-																										</div>
-																										<script>
-																										function verificarCheckBox() {
-																										    var check = document.getElementsByName("jagerado");
-																										    for (var i=0;i<check.length;i++){
-																										        if (check[i].checked == true){
-																										          pass();
-																										        }  else {
-																										          alert("Para gerar uma nova conta voce deve marcar a caixa de seleção.");
-																														}}}
-																										</script>';
-																									}else{
-																							echo '<input type="hidden" class="form-control" id="jagerado" name="jagerado" value="off">
-																										<script>function verificarCheckBox() { pass(); }</script> ';
-																									} ?>
 						                                    <div class="form-actions">
-																									<a style="color:white;" onclick="verificarCheckBox();" class="btn btn-primary"> <i class="fas fa-cogs"></i> Gerar login</a>&nbsp;
-																									<button type="button" onclick="history.go(-1)" class="btn btn-danger"> <i class="fas fa-chevron-circle-left"></i> Voltar</button>
+																									<button type="button" onclick="tempdesativado()" class="btn btn-primary"> <i class="fas fa-cogs"></i> Desativado temporariamente</button>
 						                                    	</div>
 						                               	</form>
 						                           	</div>

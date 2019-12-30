@@ -16,8 +16,8 @@
                                 Contato
                             </h2>
                             <ul>
-                      				<li><a target="_blank" href="https://t.me/hackkkcah">Telegram: @hackkkcah</a></li>
-                      				<li><a target="_blank" href="https://t.me/grupodotrovao">Grupo: @grupodotrovao</a></li>
+                      				<li><a target="_blank" href="https://t.me/K_I_N_G_BR">Telegram: @K_I_N_G_BR</a></li>
+                      				<li><a target="_blank" href="https://t.me/grupokingbr">Grupo: @grupokingbr</a></li>
                             </ul>
                         </li>
                     </ul>

@@ -1,27 +1,11 @@
-function mostrarloginadmin(){ocultatudo(); document.getElementById("bannerloginadmin").style.display = "block"; travarrolagem();};
-function mostrarlogin(){ocultatudo(); document.getElementById("bannerlogin").style.display = "block"; travarrolagem();};
-function mostrarlogin2(){ocultatudo(); document.getElementById("bannerlogin2").style.display = "block"; travarrolagem();};
-
-function mostrarconta(){ocultatudo(); document.getElementById("bannercontagerada").style.display = "block"; travarrolagem();};
-
-function mostrarrec(){ocultatudo(); document.getElementById("bannerrec").style.display = "block"; travarrolagem();};
+function desativado1(){ocultatudo(); document.getElementById("desativado").style.display = "block"; travarrolagem();};
 
 function liberarrolagem(){$("html, body").css({'overflow' : 'visible' });};
 function travarrolagem(){$("html, body").css({'overflow' : 'hidden' });};
 
 function ocultatudo(){
-  if($(".page-wrapper").hasClass("toggled")){ $(".page-wrapper").removeClass("toggled");
-  document.getElementById("fundomenu").style.display = "none"; }
-  document.getElementById("bannerrec").style.display = "none";
-  document.getElementById("bannerlogin").style.display = "none";
-  document.getElementById("bannerlogin2").style.display = "none";
-  document.getElementById("bannerloginadmin").style.display = "none";
-  document.getElementById("bannercontagerada").style.display = "none";
-  liberarrolagem(); }
-
-function naodeixaentrar(){alert('Voce precisa estar logado para acessar esta pagina!'); window.location='/?u=2';};
-
-function tempdesativado() { alert('Esta função esta desativada temporariamente!'); window.location='/'; }
+  if($(".page-wrapper").hasClass("toggled")){ $(".page-wrapper").removeClass("toggled");}
+}
 
 function caracteres(evt) {
  var theEvent = evt || window.event;

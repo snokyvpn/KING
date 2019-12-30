@@ -8,7 +8,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 		<?php require_once($_SERVER['DOCUMENT_ROOT']."/php/allcssjs.php"); ?>
 	</head>
-	<body class="landing1">
+	<body class="landing1" onload="desativado1()">
 		<?php require_once($_SERVER['DOCUMENT_ROOT']."/php/menu.php"); ?>
 			<section id="main" class="wrapper">
 			<div class="container">

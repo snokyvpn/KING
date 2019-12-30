@@ -17,3 +17,5 @@
 	<script src="/vendor/CustomScrollBar/jquery.mCustomScrollbar.concat.min.js"></script>
 	<link rel="stylesheet" href="/css/menu.css">
 	<script src="/js/menulateral.js"></script>
+
+	<link rel="shortcut icon" href="/images/logo.jpg" type="image/x-png"/>
